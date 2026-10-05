@@ -1,0 +1,5 @@
+# 小黑盒本地凭据采集；任务目前只读，不签到。
+# 不上传 Cookie，不修改原始 App 响应。
+hostname = api.xiaoheihe.cn
+
+^https://api\.xiaoheihe\.cn/(?:account/info/|task/sign_v3/(?:sign|get_sign_state))\? url script-response-body https://raw.githubusercontent.com/nexdoul/quantumult-x-rewrites/main/scripts/heybox.js
